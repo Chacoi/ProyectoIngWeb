@@ -1,0 +1,10 @@
+#jumbo{
+    background-image: url("https://img.eldefinido.cl/portadas/650/2015-03-24-9133ZJV8201.jpg");
+}
+.jumbotron{
+    color: inherit;
+}
+h1{
+    -webkit-text-stroke: 2px black;
+    color: #d4fad6;
+}
