@@ -1,0 +1,49 @@
+
+<!--
+  <h3>Asignaturas Disponibles</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let asignatura of asignaturas" class="col-1-4" routerLink="/detail/{{hero.id}}">
+    <div class="module asignatura">
+      <h4>{{asignatura.nombre}}</h4>
+    </div>
+  </a>
+</div>
+-->
+
+<div class="container" id="index">
+  <header class="jumbotron" id="jumbo">
+      <div>
+          <h1>ASIGNATURAS ESCUELA DE INFORMATICA</h1>
+          <p>Sientase libre de calificar los ramos que ha tenido</p>
+      </div>
+     <!-- <a class="btn btn-warning" routerLink="/dashboard">Dashboard</a>
+      <a class="btn btn-warning" routerLink="/asignaturas">Asignaturas</a>-->
+  </header>
+  <div class="row">
+      <div class="col-lg-12">
+          <h2>Listado de asignaturas</h2>
+      </div>
+  </div>
+  <div class="row ">
+ 
+    <div class="col-lg-4 col-sm-6 " *ngFor="let asignatura of asignaturas" routerLink="/detail/{{asignatura.id}}">
+      <div class="card">
+        <div class="thumbnail">
+            <img src="{{asignatura.imagen}}" class="rounded mx-auto d-block card-img-top" >
+                  
+        </div>
+        <div class="card-body">
+              <div class="caption">
+                <h4 class="card-title">{{asignatura.nombre}}</h4>
+              </div>
+              <p class="card-text">Profesor(a) a cargo: {{asignatura.profesor}}</p>     
+              <p>
+                  <a routerLink="/detail/{{asignatura.id}}" class="btn btn-primary">Ver más</a>
+              </p>
+              
+        </div>
+      </div>
+    </div>
+   
+  
+</div>
