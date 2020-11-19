@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Asignatura } from './asignatura';
-import { ASIGNATURAS } from './temp-asignaturas';
+import { ASIGNATURAS } from './temp-asignatura';
 import { Observable, of } from 'rxjs';
 import { MensajeService } from './mensajes.service';
 
