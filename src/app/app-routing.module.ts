@@ -9,9 +9,15 @@ const routes: Routes = [
   //{ path: 'asignaturas', component: AsignaturasComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'detail/:id', component: AsignaturasDetailComponent },
-  { path: 'login', component: FormularioComponent},
-  { path: 'register', component: FormularioComponent}
+  { path: 'detail/:id', 
+    loadChildren: () => import('./asignaturas-detail/asignaturas-detail.module').then(m => m.AsignaturasDetailModule)
+  },
+  { path: 'login', 
+    loadChildren: () => import('./formulario/formulario.module').then(m => m.FormularioModule)
+  },
+  { path: 'register', 
+    loadChildren: () => import('./formulario2/formulario2.module').then(m => m.Formulario2Module)
+  }
 ];
 
 @NgModule({
