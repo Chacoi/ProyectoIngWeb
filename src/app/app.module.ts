@@ -10,7 +10,8 @@ import { MensajesComponent } from './mensajes/mensajes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 //import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { FormularioComponent } from './formulario/formulario.component'; // <-- NgModel lives here
+import { FormularioComponent } from './formulario/formulario.component';
+import { Formulario2Component } from './formulario2/formulario2.component'; // <-- NgModel lives here
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FormularioComponent } from './formulario/formulario.component'; // <-- 
     MensajesComponent,
     DashboardComponent,
     FormularioComponent,
+    Formulario2Component,
     
   ],
   imports: [
