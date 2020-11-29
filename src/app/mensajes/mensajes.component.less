@@ -1,0 +1,47 @@
+@colorTitulo: red;
+@fontTittle: Arial, Helvetica, sans-serif;
+@tittleWeight: lighter;
+@bodyMargin: 2em;
+@buttonFont: Cambria, Georgia;
+@buttonColor: #eee;
+@buttonHoverButton: #cfd8dc;
+@buttonDisabled: #aaa;
+@buttonClear: #333;
+@buttonMargin: 12px;
+@paddingLeftButton: 5px;
+@paddingRightButton: 10px;
+@buttonRadius: 4px;
+h2 {
+    color: @colorTitulo;
+    font-family: @fontTittle;
+    font-weight: @tittleWeight;
+  }
+  body {
+    margin: @bodyMargin;
+  }
+  body, input[text], button {
+    color: @colorTitulo;
+    font-family: @buttonFont;
+  }
+  
+  button.clear {
+    font-family: @fontTittle;
+    background-color: @buttonColor;
+    border: none;
+    padding: @paddingLeftButton @paddingRightButton;
+    border-radius: @buttonRadius;
+    cursor: pointer;
+    cursor: hand;
+  }
+  button:hover {
+    background-color: @buttonHoverButton;
+  }
+  button:disabled {
+    background-color: @buttonColor;
+    color: @buttonDisabled;
+    cursor: auto;
+  }
+  button.clear {
+    color: @buttonClear;
+    margin-bottom: @buttonMargin;
+  }

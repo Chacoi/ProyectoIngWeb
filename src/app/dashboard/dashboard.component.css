@@ -1,0 +1,26 @@
+#jumbo {
+  background-color: #b55245;
+  margin-top: 10px;
+}
+.jumbotron {
+  color: inherit;
+}
+h1 {
+  -webkit-text-stroke: 2px black;
+  color: #d4fad6;
+  font-size: 4em;
+}
+img {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+.card {
+  margin: 2px;
+  margin-top: 10px;
+  border-color: #c97b0e;
+  border-width: 1px;
+}
+h2 {
+  padding-bottom: 10px;
+}

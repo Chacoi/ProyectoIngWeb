@@ -1,0 +1,30 @@
+<!-- (ngSubmit)="saveData()"
+ --><form [formGroup]="myForm"  class="formulario">
+    <h1 class="formulario__titulo">Registro</h1>
+    <input formControlName="user" type="text" class="formulario__input" placeholder="Nombre usuario" required>
+    <div *ngIf="(myForm.get('user').errors) && myForm.get('user').dirty">
+        <small *ngIf="myForm.errors?.required">Campo requerido</small>
+    </div>
+
+    <input formControlName="pass" type="text" class="formulario__input" placeholder="Contraseña" required>
+    <div *ngIf="(myForm.get('pass').errors) && myForm.get('pass').dirty">
+        <small *ngIf="myForm.errors?.required">Campo requerido</small>
+    </div>
+    <input formControlName="pass1" type="text" class="formulario__input" placeholder="Repetir Contraseña" required>
+    <div *ngIf="(myForm.invalid && myForm.touched) || myForm.dirty">
+        <small *ngIf="myForm.errors?.required">Campo requerido</small>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-append">
+        <input type="email" class="formulario__input" id="correo" placeholder="Correo pucv" required>
+        
+            <span class="input-group-text" id="basic-addon2">@mail.pucv.cl</span>
+        </div>
+    </div>
+  
+    <button type="submit"  class="formulario__submit">Enviar registro</button>
+    <button type="" class="formulario__submit" routerLink="/dashboard">Volver atrás</button>
+</form>
+
+
+

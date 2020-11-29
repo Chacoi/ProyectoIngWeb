@@ -1,0 +1,22 @@
+<form ngNoForm [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)" class="formulario">
+    <h2 class="formulario__titulo">Iniciar sesión</h2>
+
+
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.name }} </span>
+  <span>{{ item.price | currency }}</span>
+</div>
+
+  <div>
+
+    <input id="name" type="text" formControlName="name" class="formulario__input" placeholder="Nombre usuario">
+  </div>
+
+  <div>
+
+    <input id="address" type="text" formControlName="address" class="formulario__input" placeholder="Contraseña">
+  </div>
+  <button type="submit"  class="formulario__submit">Acceder</button>
+  <button type="" class="formulario__submit" routerLink="/dashboard">Volver atrás</button>
+  
+  </form>
