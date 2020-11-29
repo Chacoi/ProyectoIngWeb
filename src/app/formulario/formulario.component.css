@@ -61,18 +61,20 @@ body {
   background: rgba(0, 0, 0, 0.1);
 }
 .formulario {
-  width: 20px;
+  width: 500px;
   max-width: 100%;
   margin: auto;
   margin-top: 30px;
   padding: 20px;
-  box-shadow: 0 0 20px 1px rgba(207, 18, 18, 0.7);
+  box-shadow: 0 0 20px 1px rgba(92, 0, 0, 0.7);
   position: relative;
+  background-color: rgb(238, 225, 225);
 }
 .formulario__titulo {
   text-align: center;
   margin-top: 0;
-  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 5.7px;
+  color: rgba(63, 5, 5, 0.7);
 }
 .formulario__input,
 .formulario__label1,
@@ -85,6 +87,7 @@ body {
 }
 .formulario__input {
   padding: 20px;
+  height: 40px;
   /* background: transparent; */
   background: rgba(193, 210, 236, 0.3);
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -129,17 +132,21 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   border: none;
+  margin-bottom: 5px;
   box-shadow: 0 3px 3px 0 rgba(22, 34, 26, 0.7);
 }
 .fijar {
   margin-top: -135px;
 }
 .input-group-append {
-  font-size: 20px;
+  font-size: 18spx;
 }
 #basic-addon2 {
-  height: 80px;
+  height: 42px;
   width: 110px;
+  background: rgba(193, 210, 236, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-right: 2px;
 }
 #correo {
   width: 350px;
