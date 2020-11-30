@@ -11,7 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 //import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FormularioComponent } from './formulario/formulario.component';
-import { Formulario2Component } from './formulario2/formulario2.component'; // <-- NgModel lives here
+import { Formulario2Component } from './formulario2/formulario2.component';
+import { SendEmailComponent } from './auth/send-email/send-email.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Formulario2Component } from './formulario2/formulario2.component'; // <
     DashboardComponent,
     FormularioComponent,
     Formulario2Component,
+    SendEmailComponent,
     
   ],
   imports: [
