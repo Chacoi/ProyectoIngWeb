@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AsignaturasDetailComponent } from './asignaturas-detail/asignaturas-detail.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { SendEmailComponent } from './auth/send-email/send-email.component';
+
 
 const routes: Routes = [
   //{ path: 'asignaturas', component: AsignaturasComponent },
@@ -17,7 +19,11 @@ const routes: Routes = [
   },
   { path: 'register', 
     loadChildren: () => import('./formulario2/formulario2.module').then(m => m.Formulario2Module)
-  }
+  },
+  {
+    path: 'verification-email',
+    component: SendEmailComponent,
+  },
 ];
 
 @NgModule({
